@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tralalero Petrolero | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">TP</span>
+                <span>TRALALERO <strong>PETROLERO</strong></span>
+            </div>
+
+            <a href="#cadastro" class="nav-button">Área de cadastro</a>
+        </nav>
+
+        <div class="hero-content">
+            <p class="tagline">POSTO DE COMBUSTÍVEL</p>
+            <h1>SUA JORNADA COMEÇA COM UM <span>TRALALÁ.</span></h1>
+            <p class="hero-description">
+                Tecnologia, qualidade e confiança em cada quilômetro.
+            </p>
+            <a href="#cadastro" class="main-button">Cadastrar funcionário</a>
+        </div>
+
+        <div class="hero-footer">
+            <span>TRALALERO PETROLERO</span>
+            <span>QUALIDADE EM CADA CAMINHO</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="section-tag">NOSSA EQUIPE</p>
+            <h2>Cadastro de funcionários</h2>
+            <p>
+                Preencha as informações abaixo para registrar um novo
+                integrante da equipe Tralalero Petrolero.
+            </p>
+        </section>
+
+        <section class="form-container" id="cadastro">
+            <div class="form-header">
+                <div>
+                    <span class="section-tag">RECURSOS HUMANOS</span>
+                    <h2>Novo cadastro</h2>
+                </div>
+                <span class="status">● SISTEMA ONLINE</span>
+            </div>
+
+            <form id="employeeForm">
+
+                <div class="form-section">
+                    <h3>01. Dados pessoais</h3>
+
+                    <div class="input-group">
+                        <label for="nome">Nome completo *</label>
+                        <input type="text" id="nome" placeholder="Digite o nome completo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="endereco">Endereço *</label>
+                        <input type="text" id="endereco" placeholder="Rua, número e bairro" required>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" placeholder="exemplo@email.com" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>02. Informações profissionais</h3>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label for="cargo">Cargo *</label>
+                            <select id="cargo" required>
+                                <option value="">Selecione um cargo</option>
+                                <option value="Frentista">Frentista</option>
+                                <option value="Gerente de unidade">Gerente de unidade</option>
+                                <option value="Operador de caixa">Operador de caixa</option>
+                                <option value="Atendente de conveniência">Atendente de conveniência</option>
+                                <option value="Supervisor de pista">Supervisor de pista</option>
+                                <option value="Auxiliar administrativo">Auxiliar administrativo</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="salario">Salário mensal *</label>
+                            <input type="text" id="salario" placeholder="R$ 0,00" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Turno de trabalho *</label>
+
+                        <div class="radio-container">
+                            <label class="radio-option">
+                                <input type="radio" name="turno" value="Manhã">
+                                <span>Manhã</span>
+                            </label>
+
+                            <label class="radio-option">
+                                <input type="radio" name="turno" value="Tarde">
+                                <span>Tarde</span>
+                            </label>
+
+                            <label class="radio-option">
+                                <input type="radio" name="turno" value="Noite">
+                                <span>Noite</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mensagem" class="mensagem" role="status"></div>
+
+                <div class="form-buttons">
+                    <button type="reset" class="clear-button">Limpar formulário</button>
+                    <button type="submit" class="submit-button">Cadastrar funcionário →</button>
+                </div>
+
+                <p class="required-note">* Campos obrigatórios</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            <span class="logo-icon">TP</span>
+            <span>TRALALERO <strong>PETROLERO</strong></span>
+        </div>
+        <p>© 2026 Tralalero Petrolero. Todos os direitos reservados.</p>
+        <p>Sua jornada começa com um Tralalá.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
