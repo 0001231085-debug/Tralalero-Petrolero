@@ -1,0 +1,25 @@
+{
+  "name": "tralalero-petrolero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0001231085-debug/Tralalero-Petrolero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/0001231085-debug/Tralalero-Petrolero/issues"
+  },
+  "homepage": "https://github.com/0001231085-debug/Tralalero-Petrolero#readme",
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2"
+  }
+}
